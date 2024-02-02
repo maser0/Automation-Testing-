@@ -12,8 +12,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.time.LocalDate;
-import java.util.HashMap;
-import java.util.Map;
+
 
 public class Main {
 
@@ -31,12 +30,12 @@ public class Main {
         void setUP(){
         driver = new FirefoxDriver();
         }
-       /* @AfterEach
+       @AfterEach
         void tearDown(){
 
          driver.quit();
         }
-        */
+
 
         @Test
         void FirstTest(){
@@ -50,16 +49,7 @@ public class Main {
             WebElement day = driver.findElement(By.id("usernamereg-day"));day.sendKeys(client1.getDay());
             WebElement year = driver.findElement(By.id("usernamereg-year"));year.sendKeys(client1.getYear());
             WebElement button = driver.findElement(By.id("reg-submit-button"));button.click();
-          /*
-          WebElement button = driver.findElement(By.id("regform"));button.click();
-            System.out.println(client1.getMonthOfbirth());
-            System.out.println(client1.getMonthNumber());
 
-            WebElement input = driver.findElement(By.xpath("//input[@class='new-todo']"));
-            input.sendKeys("Selenium");
-             WebElement button = driver.findElement(By.xpath("//a[@class='selected']"));
-            button.click();
-            */
 
         }
 
