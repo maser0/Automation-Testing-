@@ -13,6 +13,12 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Main {
 
+    Client client1 = new Client("Adam", "Kowal","1990-01-01","9001012345","1234564376");
+
+
+
+
+
      private WebDriver driver;
      @BeforeAll
         public static void setupDriver(){
